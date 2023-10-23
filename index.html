@@ -1,100 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" sizes="64x64" href="/hearth.png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <script>
-        tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-                clifford: '#da373d',
-              }
-            }
-          }
-        }
-      </script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+            },
+          },
+        },
+      };
+    </script>
 
+    <title>Alessandra & Francesco | 14.09.2024</title>
+  </head>
+  <body class="bg-rose-50">
+    <nav class="bg-transparent flex flex-col justify-center">
+      <div class="flex justify-center flex-col">
+        <img class="mx-auto" src="/logo.png" alt="" srcset="" />
+        <h1 class="font-bold text-center">Alessandra & Francesco</h1>
+      </div>
+      <div class="flex h-16 w-1/2 mx-auto items-center justify-between">
+        <a
+          href="/"
+          class="text-black hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium"
+          >Home</a
+        >
+        <a
+          href="#ceremony"
+          class="text-black hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium"
+          >Ceremony</a
+        >
+        <a
+          href="#gallery"
+          class="text-black hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium"
+          >Gallery</a
+        >
+      </div>
+    </nav>
 
+    <!-- sezione countdown -->
 
-    <title>14.09.2024 | Alessandra & Francesco</title>
-</head>
-<body class="bg-rose-50">
-  <div id="navbar" class="fixed top-0 w-full text-center">
-    <h1 class="text-center pt-4 fixed top-0">Alessandra & Francesco</h1>
-        
-    <nav class="relative flex align-center justify-center bg-transparent fixed top-0">
-      <div class="w-full px-2 justify-start pb-1 px-0">
-          <button class="navbar-toggler ms-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-         </button>
-         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mx-auto mb-2 mb-lg-0 text-center">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">HOME</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#gallery">Gallery!</a>
-            </li>
-
-    
-          </ul>
+    <div class="mb-3 py-10 justify-center w-full" id="containerCountdown">
+      <div class="w-3/4 flex mx-auto px-40">
+        <div class="w-1/2 lg:w-1/4 mb-3 flex justify-center align-end mt-4">
+          <div class="text-2xl font-bold text-center">
+            <p id="giorniMancanti"></p>
+            <p>Giorni</p>
+          </div>
+        </div>
+        <div class="w-1/2 lg:w-1/4 mb-3 flex justify-center mt-4">
+          <div class="text-center text-2xl font-bold">
+            <p id="oreMancanti"></p>
+            <p>Ore</p>
+          </div>
+        </div>
+        <div class="w-1/2 lg:w-1/4 mb-3 flex justify-center mt-4">
+          <div class="text-center text-2xl font-bold">
+            <p id="minutiMancanti"></p>
+            <p>Minuti</p>
+          </div>
+        </div>
+        <div class="w-1/2 lg:w-1/4 mb-3 flex justify-center mt-4">
+          <div class="text-center text-2xl font-bold">
+            <p id="secondiMancanti"></p>
+            <p>Secondi</p>
+          </div>
         </div>
       </div>
-    </nav>  
-  
-  </div>
-
-
-              <!-- sezione countdown -->
-            
-              <div class="mb-3 py-10 justify-center w-full" id="containerCountdown">
-                <div class="w-3/4 flex mx-auto px-40">
-                    <div class="w-1/2 lg:w-1/4 mb-3 flex justify-center align-end mt-4">
-                        <div class=" text-2xl font-bold text-center">
-                            <p id="giorniMancanti" ></p>
-                            <p>Days</p>
-                        </div>
-                    </div>
-                    <div class="w-1/2 lg:w-1/4 mb-3 flex justify-center mt-4">
-                        <div class="text-center text-2xl font-bold">
-                            <p id="oreMancanti"></p>
-                            <p >Hours</p>
-                        </div>
-                    </div>
-                    <div class="w-1/2 lg:w-1/4 mb-3 flex justify-center mt-4">
-                        <div class="text-center text-2xl font-bold">
-                            <p id="minutiMancanti"></p>
-                            <p >Mins</p>
-                        </div>
-                    </div>
-                    <div class="w-1/2 lg:w-1/4 mb-3 flex justify-center mt-4">
-                        <div class="text-center text-2xl font-bold">
-                            <p id="secondiMancanti"></p>
-                            <p >Secs</p>
-                        </div>
-                    </div>
-              
-                </div>
-    </div> 
+    </div>
 
 
 
 
-<div class="w-full px-2 py-10 lg:px-10" id="gallery">
-  <div class="text-center text-3xl ">
-    <h2 class="font-bold py-10">Gallery</h2>
+    <div class="w-full px-2 py-10 lg:px-10" id="gallery">
+      <div class="text-center text-3xl">
+        <h2 class="font-bold py-10">Gallery</h2>
+      </div>
 
-  </div>
+      <div
+        class="columns-1 sm:columns-2 md:columns-3 lg:columns-4"
+        id="photoWrapper"
+      ></div>
+    </div>
+    <div class="w-full flex justify-center">
+      <div class=" loader9"></div>
+    </div>
+    <!-- <div class="w-full flex justify-center">
+      <div class="loader1">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div> -->
 
-  <div class="columns-1 sm:columns-2 md:columns-3 lg:columns-4" id="photoWrapper"></div>
-</div>
-<!-- sezione foto masonry -->
 
+    <!-- sezione foto masonry -->
 
-    
     <script src="script.js"></script>
-</body>
+  </body>
 </html>

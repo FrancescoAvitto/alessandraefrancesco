@@ -1,18 +1,4 @@
-let photoWrapper = document.querySelector("#photoWrapper");
-console.log(photoWrapper);
-
-for (let i = 1; i <= 162; i++) {
-  let photo = document.createElement("div");
-  photo.innerHTML = ` <div class="relative mb-4 m-3">
-  <div class="overflow-hidden">
-    <img class="w-full rounded-md hover:scale-[1.10] duration-[400ms]" src="./media/img/${i}.jpg">  
-    </div>
-    </div>`;
-
-  photoWrapper.appendChild(photo);
-}
-
-// funzione countdown
+// countdown
 
 function timeout() {
   // timer
@@ -46,3 +32,19 @@ function timeout() {
 }
 
 timeout();
+
+// infinite scrolling metodo 1
+
+let photoWrapper = document.querySelector("#photoWrapper");
+console.log(photoWrapper);
+
+for (let i = 1; i <= 162; i++) {
+  let photo = document.createElement("div");
+  photo.innerHTML = ` <div class="relative mb-4 m-3">
+  <div class="overflow-hidden">
+    <img class="w-full rounded-md hover:scale-[1.10] duration-[400ms]" src="./media/img/${i}.jpg">
+    </div>
+    </div>`;
+
+  photoWrapper.appendChild(photo);
+}
