@@ -2,9 +2,164 @@ html {
     scroll-behavior:smooth;
 }
 
-h1 {
+nav {
+   backdrop-filter:blur(4px);
+
+}
+
+
+.bg-white-transparent {
+   background-color:#ffffffaa;
+}
+
+.fs-cinzel {
     font-family: 'Cinzel Decorative', serif;
    }
+
+   .bg-header {
+      background:linear-gradient(to bottom, #ffffffff, #ffffff00),url('./media/img/bari.jpg');
+      background-size:cover;
+      background-repeat:no-repeat;
+   }
+
+   /* swiper */
+.swiper {
+   width: 100%;
+   height: 90vh;
+   }
+   
+   .swiper-slide {
+   text-align: center;
+   font-size: 18px;
+   background: #fff;
+   
+   /* Center slide text vertically */
+   display: -webkit-box;
+   display: -ms-flexbox;
+   display: -webkit-flex;
+   display: flex;
+   -webkit-box-pack: center;
+   -ms-flex-pack: center;
+   -webkit-justify-content: center;
+   justify-content: center;
+   -webkit-box-align: center;
+   -ms-flex-align: center;
+   -webkit-align-items: center;
+   align-items: center;
+   }
+   
+   .swiper-slide {
+   display: block;
+   height: 100%;
+   object-fit: cover;
+   display: block;
+   height: 100vh;
+   object-fit: cover;
+   background-size:cover;
+   }
+   
+   /* slider con gradiente */
+   
+   /* .swiper-slide-1 {
+   background: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url('./media/slider01.jpg');
+   background-size:cover;
+   background-position: top center;
+   }
+    */
+   
+   .swiper-slide-1 {
+   background: url('./media/img/bari.jpg');
+   background-size:cover;
+   background-position: center;
+   }
+   
+   .swiper-slide-2 {
+   background: url('./media/img/fortino.png');
+   background-size:cover;
+   background-position: center;
+   
+   }
+   
+   .swiper-slide-3 {
+   background: url('./media/img/3.jpg');
+   background-size:cover;
+   background-position: center;
+   
+   }
+   
+   .swiper-slide-4 {
+   background: url('./media/img/4.jpg');
+   background-size:cover;
+   background-position: center;
+   
+   }
+
+   
+.swiper-button-next::after, .swiper-button-prev::after {
+   content: "";
+   }
+   
+   .swiper-button-prev {
+   background-image: url('./media/icon/circle-chevron-left.svg');
+   background-repeat:no-repeat;
+   background-position:right;
+   padding-left:10%;
+   transition:200ms;
+   z-index:30;
+   }
+   
+   .swiper-button-next {
+   background-image: url('./media/icon/circle-chevron-right.svg');
+   background-repeat:no-repeat;
+   padding-right:10%;
+   transition:200ms;
+   z-index:30;
+
+   
+   }
+   
+   .swiper-button-prev:hover {
+       background-image: url('./media/icon/circle-chevron-left-hover.svg');
+   
+       }
+       
+   .swiper-button-next:hover {
+   background-image: url('./media/icon/circle-chevron-right-hover.svg');
+   
+   }
+   
+   
+   .swiper-pagination-bullet {
+   background: rgba(255,255,255, 0.3);
+   width: 0.8rem;
+   height: 0.8rem;
+   border-radius: .5rem;
+   opacity: 1;
+   }
+   
+   .swiper-pagination-bullet-active {
+   background: rgba(255,255,255, 0.7);
+   width: 0.8rem;
+   height: 0.8rem;
+   border-radius: .5rem;
+   }
+
+   .swiper-slide-visible{
+      z-index:10 !important;
+    }
+
+    /* zoom-in metodo animation */
+
+.zoom-in {
+   width:100%!important;
+   animation: zoom 8000ms ease-in-out forwards;
+   }
+
+@keyframes zoom{
+   100% {
+     transform:scale(1.2);
+   }
+ }
 
 
    
@@ -114,3 +269,33 @@ h1 {
      100% {-webkit-transform: scale(1, 1);opacity:1;}
   }
   
+
+/* infinite scroll metodo 2  */
+
+  .box {
+    height:100px;
+    background-color: black;
+    width:100px;
+    opacity:0;
+}
+
+.show {
+    opacity:1;
+}
+
+.app {
+    width:85vw;
+    margin:2rem auto;
+}
+
+.card img {
+    width:100%;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+    transition:.2s ease-in-out;
+}
+
+.card img:hover {
+    transform:scale(1.05);
+    cursor:pointer;
+}

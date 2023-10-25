@@ -11,6 +11,12 @@
       href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    
+    <!-- swiper -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="style.css" />
     <script>
@@ -25,56 +31,74 @@
       };
     </script>
 
-    <title>Alessandra & Francesco | 14.09.2024</title>
+    <title>Alessandra&Francesco | 14.09.2024</title>
   </head>
   <body class="bg-rose-50">
-    <nav class="bg-transparent flex flex-col justify-center">
-      <div class="flex justify-center flex-col">
-        <img class="mx-auto" src="/logo.png" alt="" srcset="" />
-        <h1 class="font-bold text-center">Alessandra & Francesco</h1>
-      </div>
-      <div class="flex h-16 w-1/2 mx-auto items-center justify-between">
-        <a
-          href="/"
-          class="text-black hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium"
-          >Home</a
-        >
-        <a
-          href="#ceremony"
-          class="text-black hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium"
-          >Ceremony</a
-        >
-        <a
-          href="#gallery"
-          class="text-black hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium"
-          >Gallery</a
-        >
+    <nav id="navbar" class="flex fixed top-0 transition-color duration-300 z-30">
+      <div class="flex flex-col justify-center w-screen ">
+        <div class="flex justify-center flex-col flex-col justify-center ">
+
+          
+            <img id="navbar-box-logo" class="mx-auto" src="/logo.png" alt="" srcset="" />
+            <h1 class="font-bold text-center fs-cinzel">Alessandra & Francesco</h1>
+
+        
+        </div>
+        <div class="flex h-16 w-1/2 mx-auto items-center justify-between">
+          <a
+            href="/"
+            class="text-black hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm  fs-cinzel font-bold"
+            >Home</a
+          >
+          <a
+            href="#ceremony"
+            class="text-black hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm  fs-cinzel font-bold"
+            >Ceremony</a
+          >
+          <a
+            href="#gallery"
+            class="text-black hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm  fs-cinzel font-bold"
+            >Gallery</a
+          >
+        </div>
+
       </div>
     </nav>
+
+    <header>
+      <div class="min-h-screen bg-header">
+        <div
+        class="columns-1 sm:columns-2 md:columns-3 lg:columns-4">
+
+        
+      </div>
+    </header>
+
+   
 
     <!-- sezione countdown -->
 
     <div class="mb-3 py-10 justify-center w-full" id="containerCountdown">
-      <div class="w-3/4 flex mx-auto px-40">
-        <div class="w-1/2 lg:w-1/4 mb-3 flex justify-center align-end mt-4">
+      <div class="w-3/4 flex flex-col sm:flex-row mx-auto px-40">
+        <div class="w-full sm:w-1/2 lg:w-1/4 mb-3 flex justify-center align-end mt-4">
           <div class="text-2xl font-bold text-center">
             <p id="giorniMancanti"></p>
             <p>Giorni</p>
           </div>
         </div>
-        <div class="w-1/2 lg:w-1/4 mb-3 flex justify-center mt-4">
+        <div class="w-full sm:w-1/2 lg:w-1/4 mb-3 flex justify-center mt-4">
           <div class="text-center text-2xl font-bold">
             <p id="oreMancanti"></p>
             <p>Ore</p>
           </div>
         </div>
-        <div class="w-1/2 lg:w-1/4 mb-3 flex justify-center mt-4">
+        <div class="w-full sm:w-1/2 lg:w-1/4 mb-3 flex justify-center mt-4">
           <div class="text-center text-2xl font-bold">
             <p id="minutiMancanti"></p>
             <p>Minuti</p>
           </div>
         </div>
-        <div class="w-1/2 lg:w-1/4 mb-3 flex justify-center mt-4">
+        <div class="w-full sm:w-1/2 lg:w-1/4 mb-3 flex justify-center mt-4">
           <div class="text-center text-2xl font-bold">
             <p id="secondiMancanti"></p>
             <p>Secondi</p>
@@ -83,21 +107,54 @@
       </div>
     </div>
 
+     <!-- sezione sswiper -->
+     <div class="swiper h-[100vh] relative w-full">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper w-full">
+      <!-- Slides -->
+          <div class="swiper-slide swiper-slide-1" data-swiper-autoplay="5000"></div>
+          <div class="swiper-slide swiper-slide-2" data-swiper-autoplay="5000" ></div>
+          <div class="swiper-slide swiper-slide-3" data-swiper-autoplay="5000"></div>
+          <div class="swiper-slide swiper-slide-4" data-swiper-autoplay="5000"></div>
 
+      </div>
+      <!-- If we need pagination -->
+      <div class="swiper-pagination"></div>
+  
+      <!-- If we need navigation buttons -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+  
+    </div>
 
+  <div class="title-center">
+      <!-- <h1 class="text-white display-3 fw-bold" data-aos="fade-up" data-aos-duration="2000">THE LUXURY RETREAT</h1> -->
+      <!-- <p class="text-white fs-2" data-aos="fade-up" data-aos-duration="2000">nel cuore della Puglia</p> -->
+
+  </div>
 
     <div class="w-full px-2 py-10 lg:px-10" id="gallery">
       <div class="text-center text-3xl">
-        <h2 class="font-bold py-10">Gallery</h2>
+        <h2 class="font-bold py-10" data-aos="fade-up">Gallery</h2>
       </div>
 
+      <!-- masonry  -->
       <div
         class="columns-1 sm:columns-2 md:columns-3 lg:columns-4"
         id="photoWrapper"
       ></div>
+
+      <!-- infinite scroll 1 -->
+      <div class="app columns-1 sm:columns-2 md:columns-3 lg:columns-4 card">
+        <div class="card">
+          <!-- <img src="https://picsum.photos/200/300" /> -->
+      
+        </div>
+      </div>
+      <div class="box"></div>
     </div>
     <div class="w-full flex justify-center">
-      <div class=" loader9"></div>
+      <div class="loader9"></div>
     </div>
     <!-- <div class="w-full flex justify-center">
       <div class="loader1">
@@ -109,9 +166,68 @@
       </div>
     </div> -->
 
-
     <!-- sezione foto masonry -->
 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+
     <script src="script.js"></script>
+        <!-- swiper -->
+        <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+        <script>
+        const swiper = new Swiper('.swiper', {
+            // Optional parameters
+            direction: 'horizontal',
+            loop: false,
+    
+            autoplay:true,
+    
+            autoplay: {
+              disableOnInteraction: false,
+            },
+    
+    
+            // If we need pagination
+            pagination: {
+            el: '.swiper-pagination',
+            clickable:true
+            },
+    
+            // Navigation arrows
+            navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+            },
+    
+            zoom:true,
+    
+            zoom: {
+            maxRatio: 1.2,
+            minRation: 1,
+            },
+    
+            parallax:true,
+        });
+                
+        </script>
+    
+        <script>
+            let sliders = document.querySelectorAll('.swiper-slide');
+            let observer = new IntersectionObserver(
+                sliders =>{
+                    sliders.forEach(slider =>{
+                        slider.target.classList.toggle('zoom-in', slider.isIntersecting);
+                    })
+                },
+                {
+                    rootMargin:'0px',
+                }
+            )
+    
+            sliders.forEach(slider =>{
+                observer.observe(slider)
+            });
+    
+        </script>
   </body>
 </html>
