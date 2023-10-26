@@ -104,7 +104,7 @@ const card = document.querySelector(".card");
 const imagesPerBatch = 10;
 let currentImageIndex = 0;
 const imagesToDisplay = [];
-const imageFolder = "/media/img/";
+const imageFolder = "./media/img/";
 
 function generateImageFilesArray(start, end) {
   const imageFiles = [];
