@@ -11,6 +11,9 @@
       href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Comfortaa:wght@300;400;600;700&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     
@@ -37,85 +40,111 @@
     <nav id="navbar" class="flex fixed top-0 transition-color duration-300 z-30">
       <div class="flex flex-col justify-center w-screen ">
         <div class="flex justify-center flex-col flex-col justify-center ">
+            <img id="navbar-box-logo" class="mx-auto hidden sm:block" src="/logo.png" alt="" srcset="" />
+            <!-- <h1 class="font-bold text-center fs-cinzel">Alessandra & Francesco</h1> -->
+ 
+        </div>
+        <div class="flex">
+            <img href="#header" id="navbar-box-logo-sm" class="mx-auto my-auto h-10 hidden flex-start" src="/logo.png" alt="" srcset="" />
 
           
-            <img id="navbar-box-logo" class="mx-auto" src="/logo.png" alt="" srcset="" />
-            <h1 class="font-bold text-center fs-cinzel">Alessandra & Francesco</h1>
-
-        
-        </div>
-        <div class="flex h-16 w-1/2 mx-auto items-center justify-between">
-          <a
-            href="/"
-            class="text-black hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm  fs-cinzel font-bold"
-            >Home</a
-          >
-          <a
-            href="#ceremony"
-            class="text-black hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm  fs-cinzel font-bold"
-            >Ceremony</a
-          >
-          <a
-            href="#gallery"
-            class="text-black hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm  fs-cinzel font-bold"
-            >Gallery</a
-          >
+          <div class="h-16 w-1/2 mx-auto items-center justify-between flex-center hidden sm:flex">
+            <a
+              href="#header"
+              class="text-black hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm  fs-cinzel font-bold"
+              >Home</a
+            >
+            <a
+              href="#ceremony"
+              class="text-black hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm  fs-cinzel font-bold"
+              >Ceremony</a
+            >
+            <a
+              href="#gallery"
+              class="text-black hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm  fs-cinzel font-bold"
+              >Gallery</a
+            >
+          </div>
+  
         </div>
 
-      </div>
+        </div>
     </nav>
 
-    <header>
-      <div class="min-h-screen bg-header">
-        <div
-        class="columns-1 sm:columns-2 md:columns-3 lg:columns-4">
-
+    <header id="header" class="min-h-screen bg-header select-none ">
+        <div class="columns-1 sm:columns-2 md:columns-3 lg:columns-4 flex justify-center items-center min-h-screen px-0 mx-0">
+          <div class="text-center">
+            <h1 data-aos="fade-up" data-aos-duration="1400" data-aos-easing="ease-in-out" class="text-4xl sm:text-6xl fs-montserrat"><span class="fs-cinzel text-6xl">A</span>lessandra <br class="block sm:hidden"> <span class="fs-cinzel text-6xl">&</span> <br class="block sm:hidden" /> <span class="fs-cinzel text-6xl">F</span>rancesco </h1> <br class="block sm:hidden" />
+            <h2 data-aos="fade-up" data-aos-easing="ease-in-out"  data-aos-delay="1000" data-aos-duration="1800" class="text-3xl font-bold sm:font-light sm:text-5xl fs-montserrat "><span class="fs-cinzel">B</span>ari,<br class="block sm:hidden" /> 14 <span class="fs-cinzel">S</span>ettembre <br class="block sm:hidden">  2024</h2>
+          </div>
+        </div>
         
-      </div>
-    </header>
+      </header>
 
-   
+      <!-- sezione invito  -->
+      <section class="flex flex-col py-0 sm:py-10 flex-center items-center">
 
-    <!-- sezione countdown -->
+        <div class="bg-invitation-box w-full lg:w-3/4 relative sm:rounded-[30px] h-screen flex items-center">
+          <div class="w-full sm:w-1/2 sm:mx-5" data-aos="fade-right"  data-aos-once="true"
+          >
+            <p class="fs-montserrat bg-gray-transparent text-lg lg:text-3xl sm:rounded-[20px] text-white sm:text-black font-medium h-100 p-10 bdrop-filter-blur">Dopo più di <b>10 anni di vita insieme</b>, siamo felici di annunciare <b>il nostro matrimonio</b>. <br> 
+            Sarà una giornata di festa e vorremmo condividerla questa con le persone a cui vogliamo bene. <br> Sarà <b>Sabato 14 Settembre 2024</b>, con rito civile presso il <b>Fortino San Antonio</b>  (sulla muraglia di Bari vecchia) e il ricevimento presso <b>Masseria Nuovo Cariello</b>  a Casamassima (BA).</p>
+            
 
-    <div class="mb-3 py-10 justify-center w-full" id="containerCountdown">
-      <div class="w-3/4 flex flex-col sm:flex-row mx-auto px-40">
-        <div class="w-full sm:w-1/2 lg:w-1/4 mb-3 flex justify-center align-end mt-4">
-          <div class="text-2xl font-bold text-center">
-            <p id="giorniMancanti"></p>
-            <p>Giorni</p>
+          </div>
+          
+        </div>
+        
+        <!-- sezione countdown -->
+        <div class=" mb-3 py-10 justify-center w-full sm:w-3/4 fs-cinzel text-center sm:rounded-[20px]" id="containerCountdown">
+          <p class="fs-montserrat text-3xl">Quanto manca:
+          </p>
+          <div class="w-full flex flex-col sm:flex-row mx-auto px-40">
+            <div class="w-full sm:w-1/2 lg:w-1/4 mb-3 flex justify-center align-end mt-4 mx-2">
+              <div class="text-2xl font-bold text-center">
+                <p class="text-5xl mb-1" id="giorniMancanti"></p>
+                <p>Giorni</p>
+              </div>
+            </div>
+            <div class="w-full sm:w-1/2 lg:w-1/4 mb-3 flex justify-center mt-4 mx-2">
+              <div class="text-center text-2xl font-bold">
+                <p class="text-5xl mb-1" id="oreMancanti"></p>
+                <p>Ore</p>
+              </div>
+            </div>
+            <div class="w-full sm:w-1/2 lg:w-1/4 mb-3 flex justify-center mt-4 mx-2">
+              <div class="text-center text-2xl font-bold">
+                <p class="text-5xl mb-1" id="minutiMancanti"></p>
+                <p>Minuti</p>
+              </div>
+            </div>
+            <div class="w-full sm:w-1/2 lg:w-1/4 mb-3 flex justify-center mt-4 mx-2">
+              <div class="text-center text-2xl font-bold">
+                <p class="text-5xl mb-1" id="secondiMancanti"></p>
+                <p>Secondi</p>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="w-full sm:w-1/2 lg:w-1/4 mb-3 flex justify-center mt-4">
-          <div class="text-center text-2xl font-bold">
-            <p id="oreMancanti"></p>
-            <p>Ore</p>
-          </div>
-        </div>
-        <div class="w-full sm:w-1/2 lg:w-1/4 mb-3 flex justify-center mt-4">
-          <div class="text-center text-2xl font-bold">
-            <p id="minutiMancanti"></p>
-            <p>Minuti</p>
-          </div>
-        </div>
-        <div class="w-full sm:w-1/2 lg:w-1/4 mb-3 flex justify-center mt-4">
-          <div class="text-center text-2xl font-bold">
-            <p id="secondiMancanti"></p>
-            <p>Secondi</p>
-          </div>
-        </div>
-      </div>
-    </div>
+
+
+
+      </section>
+      
+
+
+  
 
      <!-- sezione sswiper -->
-     <div class="swiper h-[100vh] relative w-full">
+     <div id="ceremony"  class="swiper h-[100vh] relative w-full">
       <!-- Additional required wrapper -->
       <div class="swiper-wrapper w-full">
       <!-- Slides -->
-          <div class="swiper-slide swiper-slide-1" data-swiper-autoplay="5000"></div>
+          <div class="swiper-slide swiper-slide-1" data-swiper-autoplay="5000"></div>      
           <div class="swiper-slide swiper-slide-2" data-swiper-autoplay="5000" ></div>
           <div class="swiper-slide swiper-slide-3" data-swiper-autoplay="5000"></div>
           <div class="swiper-slide swiper-slide-4" data-swiper-autoplay="5000"></div>
+
 
       </div>
       <!-- If we need pagination -->
@@ -128,14 +157,17 @@
     </div>
 
   <div class="title-center">
-      <!-- <h1 class="text-white display-3 fw-bold" data-aos="fade-up" data-aos-duration="2000">THE LUXURY RETREAT</h1> -->
-      <!-- <p class="text-white fs-2" data-aos="fade-up" data-aos-duration="2000">nel cuore della Puglia</p> -->
+      <!-- <h1 class="text-white display-3 fw-bold" data-aos="fade-up" data-aos-duration="2000">THE LUXURY RETREAT</h1>
+      <p class="text-white fs-2" data-aos="fade-up" data-aos-duration="2000">nel cuore della Puglia</p> -->
 
   </div>
 
-    <div class="w-full px-2 py-10 lg:px-10" id="gallery">
+        
+
+
+    <div class="w-full px-2 py-10 lg:px-10 select-none" id="gallery">
       <div class="text-center text-3xl">
-        <h2 class="font-bold py-10" data-aos="fade-up">Gallery</h2>
+        <h2 class="font-bold py-10 fs-cinzel" data-aos="fade-up">La nostra storia</h2>
       </div>
 
       <!-- masonry  -->

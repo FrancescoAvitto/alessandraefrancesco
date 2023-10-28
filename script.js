@@ -1,12 +1,16 @@
 document.addEventListener("scroll", function () {
   const navbar = document.querySelector("#navbar");
   const navbarBoxLogo = document.querySelector("#navbar-box-logo");
+  const navbarBoxLogoSm = document.querySelector("#navbar-box-logo-sm");
+
   if (window.scrollY > 200) {
     navbar.classList.add("bg-white-transparent");
-    navbarBoxLogo.classList.add("hidden");
+    navbarBoxLogo.classList.add("sm:hidden");
+    navbarBoxLogoSm.classList.remove("hidden");
   } else {
     navbar.classList.remove("bg-white-transparent");
-    navbarBoxLogo.classList.remove("hidden");
+    navbarBoxLogo.classList.remove("sm:hidden");
+    navbarBoxLogoSm.classList.add("hidden");
   }
 });
 
@@ -135,7 +139,7 @@ function renderImages() {
 
   imagesToDisplay.forEach((imageFile) => {
     const img = document.createElement("div");
-    img.innerHTML = `<div class="relative mb-4 m-3" >
+    img.innerHTML = `<div class="relative mb-4 m-3 pointer-events-none" >
       <div class="overflow-hidden">
        <img class="w-full rounded-md hover:scale-[1.10] duration-[400ms] overflow-hidden" src="${
          imageFolder + imageFile

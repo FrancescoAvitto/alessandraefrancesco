@@ -12,8 +12,30 @@ nav {
    background-color:#ffffffaa;
 }
 
+.bg-gray-transparent {
+   background-color:#03030322;
+}
+
+.bg-invitation-box {
+   background: linear-gradient(to right, #ffa50044, #ffa50000), url('./media/img/80cut.jpg');
+   background-position: 70% center;
+   background-size:cover;
+}
+
+.bdrop-filter-blur {
+   backdrop-filter:blur(4px);
+}
+
 .fs-cinzel {
     font-family: 'Cinzel Decorative', serif;
+   }
+
+.fs-confortaa {
+   font-family: 'Comfortaa', sans-serif;
+   }
+
+   .fs-montserrat {
+      font-family: 'Montserrat', sans-serif;
    }
 
    .bg-header {
@@ -68,31 +90,32 @@ nav {
     */
    
    .swiper-slide-1 {
-   background: url('./media/img/bari.jpg');
+   background: url('./media/img/fortinoo.png');
    background-size:cover;
    background-position: center;
    }
    
    .swiper-slide-2 {
-   background: url('./media/img/fortino.png');
+   background: url('./media/img/cariello.jpg');
    background-size:cover;
    background-position: center;
    
    }
    
    .swiper-slide-3 {
-   background: url('./media/img/3.jpg');
+   background: url('./media/img/giardino_cariello.jpg');
    background-size:cover;
    background-position: center;
    
    }
    
    .swiper-slide-4 {
-   background: url('./media/img/4.jpg');
+   background: url('./media/img/cariello_interni.jpg');
    background-size:cover;
    background-position: center;
    
    }
+
 
    
 .swiper-button-next::after, .swiper-button-prev::after {
@@ -299,3 +322,15 @@ nav {
     transform:scale(1.05);
     cursor:pointer;
 }
+
+
+@media screen and (max-width: 600px)  {
+   .bg-header {
+      background-position:90% -10%;
+   }
+
+   .bg-invitation-box {
+      background-position:77%
+   }
+}
+
