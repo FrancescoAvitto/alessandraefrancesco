@@ -51,18 +51,18 @@ timeout();
 
 // infinite scrolling metodo 1
 
-// let photoWrapper = document.querySelector("#photoWrapper");
+let photoWrapper = document.querySelector("#photoWrapper");
 
-// for (let i = 1; i <= 100; i++) {
-//   let photo = document.createElement("div");
-//   photo.innerHTML = ` <div class="relative mb-4 m-3" >
-//   <div class="overflow-hidden">
-//     <img class="w-full rounded-md hover:scale-[1.10] duration-[400ms]" src="./media/img/${i}.jpg">
-//     </div>
-//     </div>`;
+for (let i = 1; i <= 100; i++) {
+  let photo = document.createElement("div");
+  photo.innerHTML = ` <div class="relative mb-4 m-3" >
+  <div class="overflow-hidden">
+    <img class="w-full rounded-md hover:scale-[1.10] duration-[400ms]" src="./media/img/${i}.jpg">
+    </div>
+    </div>`;
 
-//   photoWrapper.appendChild(photo);
-// }
+  photoWrapper.appendChild(photo);
+}
 
 // infinite scrolling metodo 2
 
@@ -103,63 +103,65 @@ timeout();
 //   }
 // }
 
-const loader = document.querySelector(".loader9");
-const card = document.querySelector(".card");
-const imagesPerBatch = 10;
-let currentImageIndex = 0;
-const imagesToDisplay = [];
-const imageFolder = "./media/img/";
+// infinite scrolling metodo 2
 
-function generateImageFilesArray(start, end) {
-  const imageFiles = [];
+// const loader = document.querySelector(".loader9");
+// const card = document.querySelector(".card");
+// const imagesPerBatch = 10;
+// let currentImageIndex = 0;
+// const imagesToDisplay = [];
+// const imageFolder = "./media/img/";
 
-  for (let i = start; i <= end; i++) {
-    const filename = `${i}.jpg`;
-    imageFiles.push(filename);
-  }
+// function generateImageFilesArray(start, end) {
+//   const imageFiles = [];
 
-  return imageFiles;
-}
-const imageFiles = generateImageFilesArray(1, 100);
+//   for (let i = start; i <= end; i++) {
+//     const filename = `${i}.jpg`;
+//     imageFiles.push(filename);
+//   }
 
-function renderImages() {
-  for (let i = 0; i < imagesPerBatch; i++) {
-    if (currentImageIndex < imageFiles.length) {
-      imagesToDisplay.push(imageFiles[currentImageIndex]);
-      currentImageIndex++;
+//   return imageFiles;
+// }
+// const imageFiles = generateImageFilesArray(1, 100);
 
-      if (currentImageIndex >= imageFiles.length) {
-        loader.classList.add("hidden");
-        break;
-      }
-    }
-  }
+// function renderImages() {
+//   for (let i = 0; i < imagesPerBatch; i++) {
+//     if (currentImageIndex < imageFiles.length) {
+//       imagesToDisplay.push(imageFiles[currentImageIndex]);
+//       currentImageIndex++;
 
-  card.innerHTML = "";
+//       if (currentImageIndex >= imageFiles.length) {
+//         loader.classList.add("hidden");
+//         break;
+//       }
+//     }
+//   }
 
-  imagesToDisplay.forEach((imageFile) => {
-    const img = document.createElement("div");
-    img.innerHTML = `<div class="relative mb-4 m-3 pointer-events-none" >
-      <div class="overflow-hidden">
-       <img class="w-full rounded-md hover:scale-[1.10] duration-[400ms] overflow-hidden" src="${
-         imageFolder + imageFile
-       }">
-      </div>
-      </div>`;
-    card.appendChild(img);
-  });
-}
+//   card.innerHTML = "";
 
-window.onscroll = () => {
-  const { scrollTop, clientHeight, scrollHeight } = document.documentElement;
+//   imagesToDisplay.forEach((imageFile) => {
+//     const img = document.createElement("div");
+//     img.innerHTML = `<div class="relative mb-4 m-3 pointer-events-none" >
+//       <div class="overflow-hidden">
+//        <img class="w-full rounded-md hover:scale-[1.10] duration-[400ms] overflow-hidden" src="${
+//          imageFolder + imageFile
+//        }">
+//       </div>
+//       </div>`;
+//     card.appendChild(img);
+//   });
+// }
 
-  if (scrollTop + clientHeight + 1 >= scrollHeight) {
-    loader.classList.add("show");
-    renderImages();
-  } else {
-    loader.classList.remove("show");
-  }
-};
+// window.onscroll = () => {
+//   const { scrollTop, clientHeight, scrollHeight } = document.documentElement;
+
+//   if (scrollTop + clientHeight + 1 >= scrollHeight) {
+//     loader.classList.add("show");
+//     renderImages();
+//   } else {
+//     loader.classList.remove("show");
+//   }
+// };
 
 // // animate on scroll
 AOS.init({
