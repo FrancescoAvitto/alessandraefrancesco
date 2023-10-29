@@ -34,12 +34,12 @@ nav {
    background-color:#ffffffaa;
 }
 
-.bg-gray-transparent {
-   background-color:#03030322;
+.bg-white-transparent {
+   background: linear-gradient(to right, #fff1f2ca, transparent)
 }
 
 .bg-invitation-box {
-   background: linear-gradient(to right, #ffa50044, #ffa50000), url('./media/img/80cut.jpg');
+   background: linear-gradient(to right, #fff1f2c7, #fff1f225), url('./media/img/80cut.jpg');
    background-position: 70% center;
    background-size:cover;
 }
