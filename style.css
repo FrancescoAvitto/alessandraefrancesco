@@ -119,31 +119,31 @@ nav {
     */
    
    .swiper-slide-1 {
-   background: url('./media/img/fortinoo.png');
+   background: linear-gradient(to bottom, #f3a8a8ba, transparent), url('./media/img/fortinoo.png');
    background-size:cover;
    background-position: center;
    }
    
    .swiper-slide-2 {
-   background: url('./media/img/cariello.jpg');
+   background:linear-gradient(to bottom, #f3a8a89a, transparent),  url('./media/img/cariello.jpg');
    background-size:cover;
    background-position: center;
    
    }
    
    .swiper-slide-3 {
-   background: url('./media/img/giardino_cariello.jpg');
+   background:linear-gradient(to bottom, #f3a8a877, transparent),  url('./media/img/cariello_int.webp');
    background-size:cover;
    background-position: center;
    
    }
-   
    .swiper-slide-4 {
-   background: url('./media/img/cariello_interni.jpg');
+   background:linear-gradient(to bottom, #f3a8a859, transparent),  url('./media/img/giardino_cariello.jpg');
    background-size:cover;
    background-position: center;
    
    }
+   
 
 
    
