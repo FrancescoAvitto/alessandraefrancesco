@@ -30,8 +30,10 @@ nav {
 }
 
 
-.bg-white-transparent {
+.bg-white-trans {
    background-color:#ffffffaa;
+   background: linear-gradient(to bottom , #fff1f27d, transparent)
+
 }
 
 .bg-white-transparent {
@@ -42,6 +44,15 @@ nav {
    background: linear-gradient(to right, #fff1f2c7, #fff1f225), url('./media/img/80cut.jpg');
    background-position: 70% center;
    background-size:cover;
+}
+
+.bg-rito {
+   background: linear-gradient(to bottom, #fff1f269, transparent), url('./media/img/fortino.png');
+   background-position: center;
+
+
+   
+
 }
 
 .bdrop-filter-blur {
