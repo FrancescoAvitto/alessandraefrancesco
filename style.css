@@ -323,6 +323,18 @@ nav {
     cursor:pointer;
 }
 
+.j-image img[alt="Embed Social Media Feeds on your website with Juicer!"] {
+   display:none !important;
+ }
+
+ .juicer-about {
+   display:none!important;
+ }
+
+ h1.referral {
+   display:none !important;
+ }
+
 
 @media screen and (max-width: 600px)  {
    .bg-header {
