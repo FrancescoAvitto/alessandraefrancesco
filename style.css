@@ -1,3 +1,25 @@
+@font-face {
+   font-family: 'Cinzel Decorative Bold';
+   src: url('./media/fonts/CinzelDecorative-Bold.ttf');
+   src: local('Cinzel Decorative'), url('./media/fonts/CinzelDecorative-Bold.ttf') format('truetype');
+}
+@font-face {
+   font-family: 'Cinzel Decorative';
+   src: url('./media/fonts/CinzelDecorative-Regular.ttf');
+   src: local('Cinzel Decorative'), url('./media/fonts/CinzelDecorative-Regular.ttf') format('truetype');
+}
+@font-face {
+   font-family: 'Nunito Sans';
+   src: url('./media/fonts/NunitoSans_7pt_Condensed-Medium.ttf');
+   src: local('Cinzel Decorative'), url('./media/fonts/NunitoSans-VariableFont_YTLC,opsz,wdth,wght.ttf') format('truetype');
+}
+
+body {
+   font-family: 'Nunito Sans', sans-serif;
+}
+
+
+
 html {
     scroll-behavior:smooth;
 }
@@ -29,6 +51,13 @@ nav {
 .fs-cinzel {
     font-family: 'Cinzel Decorative', serif;
    }
+.fs-cinzel-bold {
+   font-family: 'Cinzel Decorative Bold', serif;
+   }
+.fs-nunito-sans {
+   font-family:'Nunito Sans', sans-serif;
+
+}
 
 .fs-confortaa {
    font-family: 'Comfortaa', sans-serif;
