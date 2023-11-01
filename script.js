@@ -49,6 +49,46 @@ function timeout() {
 
 timeout();
 
+// logica btn collapsible
+
+let coll = document.getElementsByClassName("collapsible");
+const iconBars = document.querySelector("#iconBars");
+const iconClose = document.querySelector("#iconClose");
+
+let i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function () {
+    this.classList.toggle("active");
+    let content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      iconBars.classList.remove("hidden");
+      iconClose.classList.add("hidden");
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+      iconBars.classList.add("hidden");
+      iconClose.classList.remove("hidden");
+    }
+  });
+}
+
+// Trova tutti gli ancoraggi che devono attivare il collapsible
+const toggleAnchors = document.querySelectorAll('[data-toggle="collapsible"]');
+
+// Aggiungi un gestore di eventi a ciascun ancoraggio
+toggleAnchors.forEach((anchor) => {
+  anchor.addEventListener("click", function () {
+    // Trova il contenuto del collapsible
+    const collapsibleContent = this.closest(".content");
+
+    // Nascondi il contenuto del collapsible
+    collapsibleContent.style.display = "none";
+    iconClose.classList.add("hidden");
+    iconBars.classList.remove("hidden");
+  });
+});
+
 // infinite scrolling metodo 1
 
 let photoWrapper = document.querySelector("#photoWrapper");

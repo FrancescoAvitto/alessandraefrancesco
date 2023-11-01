@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/png" sizes="64x64" href="/hearth.png" />
+    <link rel="icon" type="image/png" sizes="64x64" href="./hearth.png" />
 
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
@@ -36,14 +36,34 @@
 
             </div>
             <div class="flex">
-                <img href="#header" id="navbar-box-logo-sm" class="flex-start mx-auto my-auto hidden h-10" src="./logo.png" alt="" srcset="" />
+                <a id="navbar-box-logo-sm" href="#header" class="mx-auto my-auto flex-start hidden hover:bg-black hover:text-white p-3 rounded-xl">
+                    <p class="fs-cinzel-bold text-4xl transition duration-[400ms]">A&F</p>
+                </a>
 
 
-                <div class="flex-center mx-auto hidden h-16 w-1/2 items-center justify-between sm:flex">
-                    <a href="#header" class="fs-cinzel rounded-md px-3 py-2 text-sm font-bold text-black hover:bg-black hover:text-white">Home</a>
-                    <a href="#ceremony" class="fs-cinzel rounded-md px-3 py-2 text-sm font-bold text-black hover:bg-black hover:text-white">Ceremony</a>
-                    <a href="#gallery" class="fs-cinzel rounded-md px-3 py-2 text-sm font-bold text-black hover:bg-black hover:text-white">Gallery</a>
+                <div class="flex-center mx-auto hidden h-16 w-1/2 items-center justify-evenly sm:flex">
+                    <a href="#ceremony" class="fs-cinzel-bold rounded-md px-3 py-2 transition duration-[300ms] text-black hover:bg-black hover:text-white text-xl">Ceremony</a>
+                    <a href="#gallery" class="fs-cinzel-bold rounded-md px-3 py-2 transition duration-[300ms] text-black hover:bg-black hover:text-white text-xl">Gallery</a>
+                    <a href="#contacts" class="fs-cinzel-bold rounded-md px-3 py-2 transition duration-[300ms] text-black hover:bg-black hover:text-white text-xl">Contacts</a>
                 </div>
+
+                <div class="flex w-full justify-end sm:hidden">
+
+                    <button type="button" class="collapsible me-4">
+                        <img id="iconBars" class="h-6" src="./media/icon/bars.svg" alt="">
+                        <img id="iconClose" class="h-6 hidden" src="./media/icon/close.svg" alt="">
+                    </button>
+                    <div class="sm:hidden content py-10">
+                        <div class="flex flex-col align-center w-full text-center">
+                            <a href="#ceremony" class="fs-cinzel-bold rounded-md px-3 py-2 transition duration-[300ms] text-black hover:bg-black hover:text-white text-xl" data-toggle="collapsible">Ceremony</a>
+                            <a href="#gallery" class="fs-cinzel-bold rounded-md px-3 py-2 transition duration-[300ms] text-black hover:bg-black hover:text-white text-xl" data-toggle="collapsible">Gallery</a>
+                            <a href="#contacts" class="fs-cinzel-bold rounded-md px-3 py-2 transition duration-[300ms] text-black hover:bg-black hover:text-white text-xl" data-toggle="collapsible">Contacts</a>
+
+                        </div>
+                    
+                    </div>
+                </div>
+
 
             </div>
 
@@ -64,9 +84,9 @@
     <section class="flex-center flex flex-col items-center py-0 sm:py-10">
 
         <div class="bg-invitation-box relative flex w-full items-center sm:rounded-[30px] lg:w-3/4">
-            <div class="w-full sm:w-1/2" data-aos="fade-up" data-aos-duration="2400" data-aos-easing="ease-in-out" data-aos-once="true">
+            <div class="w-full sm:w-1/2" data-aos="fade-right" data-aos-duration="2400" data-aos-easing="ease-in-out" data-aos-once="true">
                 <p class="bg-white-transparent h-100 bdrop-filter-blur p-10 text-lg font-medium text-black sm:rounded-[20px] lg:text-3xl">Dopo più di <b>10 anni di vita insieme</b>, siamo felici di annunciare <b>il nostro matrimonio</b>. <br>
-                    Sarà una giornata di festa e vorremmo condividerla con le persone a cui vogliamo bene. <br> Sarà <b>sabato 14 Settembre 2024</b>, con rito civile presso il <b>Fortino San Antonio</b> (sulla muraglia di Bari vecchia) e il ricevimento presso <b>Masseria Nuovo Cariello</b> a Casamassima (BA).</p>
+                    Sarà una giornata di festa e vorremmo condividerla con tuttle le persone a cui vogliamo bene. <br> Sarà <b>sabato 14 Settembre 2024</b>, con rito civile presso il <b>Fortino San Antonio</b> (sulla muraglia di Bari vecchia) e il ricevimento presso <b>Masseria Nuovo Cariello</b> a Casamassima (BA).</p>
 
 
             </div>
@@ -75,7 +95,7 @@
 
         <!-- sezione countdown -->
         <div class="fs-cinzel mb-3 w-full justify-center py-10 text-center sm:w-3/4 sm:rounded-[20px]" id="containerCountdown">
-            <p class="fs-nunito-sans text-3xl">Quanto manca:
+            <p class="fs-cinzel font-bold text-3xl mb-3">Countdown
             </p>
             <div class="mx-auto flex w-full flex-col px-40 sm:flex-row">
                 <div class="align-end mx-2 mb-3 mt-4 flex w-full justify-center sm:w-1/2 lg:w-1/4">
@@ -215,6 +235,21 @@
     </div>
 
     <script type="text/javascript" src="https://www.juicer.io/embed/vincentvega1988-f58094bd-cc1e-4081-a133-67797e7644ab/embed-code.js" async defer></script>
+
+    
+    <div class="w-full px-2 py-10 lg:px-10" id="contacts">
+        <div class="text-center text-3xl">
+            <h2 class="fs-cinzel select-none py-10 font-bold" data-aos="fade-up">Contatti</h2>
+        </div>
+
+
+
+    </div>
+
+
+
+
+
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
