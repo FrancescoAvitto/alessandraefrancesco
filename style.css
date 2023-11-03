@@ -14,6 +14,25 @@
    src: local('Cinzel Decorative'), url('./media/fonts/NunitoSans-VariableFont_YTLC,opsz,wdth,wght.ttf') format('truetype');
 }
 
+    /* scrollbar */
+
+   ::-webkit-scrollbar {
+      width: 8px;  
+      height:8px;             /* width of the entire scrollbar */
+    }
+
+   ::-webkit-scrollbar-track {
+      background: transparent;        /* color of the tracking area */
+    }
+
+   ::-webkit-scrollbar-thumb {
+      background-color: black;    /* color of the scroll thumb */
+      border-radius: 20px;       /* roundness of the scroll thumb */
+      border: none;  /* creates padding around scroll thumb */
+    } 
+
+
+
 body {
    font-family: 'Nunito Sans', sans-serif;
 }
@@ -39,6 +58,15 @@ nav {
 .bg-white-transparent {
    background: linear-gradient(to right, #fff1f2ca, transparent)
 }
+
+.bg-white-transparent-box {
+   background: linear-gradient(to right, #fff1f266, #fff1f266 );
+   backdrop-filter:blur(4px);
+   top:calc(50% - 100px );
+   top:0;
+   left:calc(0%);
+}
+
 
 .bg-invitation-box {
    background: linear-gradient(to right, #fff1f2c7, #fff1f225), url('./media/img/80cut.jpg');
@@ -223,6 +251,19 @@ nav {
    100% {
      transform:scale(1.2);
    }
+ }
+
+ .box-rito {
+   background: linear-gradient(to bottom, #f3a8a8ba, transparent), url('./media/img/fortiday.png');
+   background-size:cover;
+   background-position:center;
+   height:400px;
+ }
+ .box-ricevimento {
+   background: linear-gradient(to bottom, #f3a8a8ba, transparent), url('./media/img/cariello-box.jpg');
+   background-size:cover;
+   background-position:center;
+   height:400px;
  }
 
 
