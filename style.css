@@ -114,12 +114,12 @@ nav {
    }
 
    /* swiper */
-.swiper {
+.swiper, .swipertwo {
    width: 100%;
    height: 90vh;
    }
    
-   .swiper-slide {
+   .swiper-slide, .swiper-slidetwo {
    text-align: center;
    font-size: 18px;
    background: #fff;
@@ -139,7 +139,7 @@ nav {
    align-items: center;
    }
    
-   .swiper-slide {
+   .swiper-slide, .swiper-slidetwo {
    display: block;
    height: 100%;
    object-fit: cover;
@@ -183,15 +183,625 @@ nav {
    background-position: center;
    
    }
+
+
+/* swiper immagini  */
+
+      .swiper-img-1 {
+         background:linear-gradient(to bottom, #f3a8a89a, transparent),  url('./media/img/1.jpg');
+         background-size:cover;
+         background-position: center;   
+         }  
+      .swiper-img-2 {
+         background:linear-gradient(to bottom, #f3a8a877, transparent),  url('./media/img/2.jpg');
+           background-size:cover;
+         background-position: center;
+
+         }
+      .swiper-img-3 {
+         background:linear-gradient(to bottom, #f3a8a859, transparent),  url('./media/img/3.jpg');
+           background-size:cover;
+         background-position: center;
+
+      }
+      .swiper-img-4 {
+         background:linear-gradient(to bottom, #f3a8a89a, transparent),  url('./media/img/4.jpg');
+           background-size:cover;
+         background-position: center;
+
+         }  
+      .swiper-img-5 {
+         background:linear-gradient(to bottom, #f3a8a877, transparent),  url('./media/img/5.jpg');
+           background-size:cover;
+         background-position: center;
+
+         }
+      .swiper-img-6 {
+         background:linear-gradient(to bottom, #f3a8a859, transparent),  url('./media/img/6.jpg');
+           background-size:cover;
+         background-position: center;
+
+      }
+      .swiper-img-7 {
+         background:linear-gradient(to bottom, #f3a8a89a, transparent),  url('./media/img/7.jpg');
+           background-size:cover;
+         background-position: center;
+
+         }  
+      .swiper-img-8 {
+         background:linear-gradient(to bottom, #f3a8a877, transparent),  url('./media/img/8.jpg');
+           background-size:cover;
+         background-position: center;
+
+         }
+      .swiper-img-9 {
+         background:linear-gradient(to bottom, #f3a8a859, transparent),  url('./media/img/9.jpg');
+           background-size:cover;
+         background-position: center;
+
+      }
+      .swiper-img-10 {
+         background:linear-gradient(to bottom, #f3a8a89a, transparent),  url('./media/img/10.jpg');
+           background-size:cover;
+         background-position: center;
+
+         }  
+      .swiper-img-11 {
+         background:linear-gradient(to bottom, #f3a8a877, transparent),  url('./media/img/11.jpg');
+           background-size:cover;
+         background-position: center;
+
+         }
+      .swiper-img-12 {
+         background:linear-gradient(to bottom, #f3a8a859, transparent),  url('./media/img/12.jpg');
+           background-size:cover;
+         background-position: center;
+
+      }
+      .swiper-img-13 {
+         background:linear-gradient(to bottom, #f3a8a89a, transparent),  url('./media/img/13.jpg');
+           background-size:cover;
+         background-position: center;
+
+         }  
+      .swiper-img-14 {
+         background:linear-gradient(to bottom, #f3a8a877, transparent),  url('./media/img/14.jpg');
+           background-size:cover;
+         background-position: center;
+
+         }
+      .swiper-img-15 {
+         background:linear-gradient(to bottom, #f3a8a859, transparent),  url('./media/img/15.jpg');
+           background-size:cover;
+         background-position: center;
+
+      }
+      .swiper-img-16 {
+         background:linear-gradient(to bottom, #f3a8a89a, transparent),  url('./media/img/16.jpg');
+           background-size:cover;
+         background-position: center;
+
+         }  
+      .swiper-img-17 {
+         background:linear-gradient(to bottom, #f3a8a877, transparent),  url('./media/img/17.jpg');
+           background-size:cover;
+         background-position: center;
+
+         }
+      .swiper-img-18 {
+         background:linear-gradient(to bottom, #f3a8a859, transparent),  url('./media/img/18.jpg');
+           background-size:cover;
+         background-position: center;
+
+      }
+      .swiper-img-19 {
+         background:linear-gradient(to bottom, #f3a8a89a, transparent),  url('./media/img/19.jpg');
+           background-size:cover;
+         background-position: center;
+
+         }  
+      .swiper-img-20 {
+         background:linear-gradient(to bottom, #f3a8a877, transparent),  url('./media/img/20.jpg');
+           background-size:cover;
+         background-position: center;
+
+         }
+
+
+         .swiper-img-21 {
+            background:linear-gradient(to bottom, #f3a8a89a, transparent),  url('./media/img/21.jpg');
+            background-size:cover;
+            background-position: center;   
+            }  
+         .swiper-img-22 {
+            background:linear-gradient(to bottom, #f3a8a877, transparent),  url('./media/img/22.jpg');
+              background-size:cover;
+            background-position: center;
+   
+            }
+         .swiper-img-23 {
+            background:linear-gradient(to bottom, #f3a8a859, transparent),  url('./media/img/23.jpg');
+              background-size:cover;
+            background-position: center;
+   
+         }
+         .swiper-img-24 {
+            background:linear-gradient(to bottom, #f3a8a89a, transparent),  url('./media/img/24.jpg');
+              background-size:cover;
+            background-position: center;
+   
+            }  
+         .swiper-img-25 {
+            background:linear-gradient(to bottom, #f3a8a877, transparent),  url('./media/img/25.jpg');
+              background-size:cover;
+            background-position: center;
+   
+            }
+         .swiper-img-26 {
+            background:linear-gradient(to bottom, #f3a8a859, transparent),  url('./media/img/26.jpg');
+              background-size:cover;
+            background-position: center;
+   
+         }
+         .swiper-img-27 {
+            background:linear-gradient(to bottom, #f3a8a89a, transparent),  url('./media/img/27.jpg');
+              background-size:cover;
+            background-position: center;
+   
+            }  
+         .swiper-img-28 {
+            background:linear-gradient(to bottom, #f3a8a877, transparent),  url('./media/img/28.jpg');
+              background-size:cover;
+            background-position: center;
+   
+            }
+         .swiper-img-29 {
+            background:linear-gradient(to bottom, #f3a8a859, transparent),  url('./media/img/29.jpg');
+              background-size:cover;
+            background-position: center;
+   
+         }
+         .swiper-img-30 {
+            background:linear-gradient(to bottom, #f3a8a89a, transparent),  url('./media/img/30.jpg');
+              background-size:cover;
+            background-position: center;
+   
+            }  
+         .swiper-img-31 {
+            background:linear-gradient(to bottom, #f3a8a877, transparent),  url('./media/img/31.jpg');
+              background-size:cover;
+            background-position: center;
+   
+            }
+         .swiper-img-32 {
+            background:linear-gradient(to bottom, #f3a8a859, transparent),  url('./media/img/32.jpg');
+              background-size:cover;
+            background-position: center;
+   
+         }
+         .swiper-img-33 {
+            background:linear-gradient(to bottom, #f3a8a89a, transparent),  url('./media/img/33.jpg');
+              background-size:cover;
+            background-position: center;
+   
+            }  
+         .swiper-img-34 {
+            background:linear-gradient(to bottom, #f3a8a877, transparent),  url('./media/img/34.jpg');
+              background-size:cover;
+            background-position: center;
+   
+            }
+         .swiper-img-35 {
+            background:linear-gradient(to bottom, #f3a8a859, transparent),  url('./media/img/35.jpg');
+              background-size:cover;
+            background-position: center;
+   
+         }
+         .swiper-img-36 {
+            background:linear-gradient(to bottom, #f3a8a89a, transparent),  url('./media/img/36.jpg');
+              background-size:cover;
+            background-position: center;
+   
+            }  
+         .swiper-img-37 {
+            background:linear-gradient(to bottom, #f3a8a877, transparent),  url('./media/img/37.jpg');
+              background-size:cover;
+            background-position: center;
+   
+            }
+         .swiper-img-38 {
+            background:linear-gradient(to bottom, #f3a8a859, transparent),  url('./media/img/38.jpg');
+              background-size:cover;
+            background-position: center;
+   
+         }
+         .swiper-img-39 {
+            background:linear-gradient(to bottom, #f3a8a89a, transparent),  url('./media/img/39.jpg');
+              background-size:cover;
+            background-position: center;
+   
+            }  
+         .swiper-img-40 {
+            background:linear-gradient(to bottom, #f3a8a877, transparent),  url('./media/img/40.jpg');
+              background-size:cover;
+            background-position: center;
+   
+            }
+
+            .swiper-img-41 {
+               background:linear-gradient(to bottom, #f3a8a877, transparent),  url('./media/img/41.jpg');
+                 background-size:cover;
+               background-position: center;
+      
+               }
+            .swiper-img-42 {
+               background:linear-gradient(to bottom, #f3a8a859, transparent),  url('./media/img/42.jpg');
+                 background-size:cover;
+               background-position: center;
+      
+            }
+            .swiper-img-43 {
+               background:linear-gradient(to bottom, #f3a8a89a, transparent),  url('./media/img/43.jpg');
+                 background-size:cover;
+               background-position: center;
+      
+               }  
+            .swiper-img-44 {
+               background:linear-gradient(to bottom, #f3a8a877, transparent),  url('./media/img/44.jpg');
+                 background-size:cover;
+               background-position: center 10%;
+
+      
+               }
+            .swiper-img-45 {
+               background:linear-gradient(to bottom, #f3a8a859, transparent),  url('./media/img/45.jpg');
+                 background-size:cover;
+               background-position: center;
+      
+            }
+            .swiper-img-46 {
+               background:linear-gradient(to bottom, #f3a8a89a, transparent),  url('./media/img/46.jpg');
+                 background-size:cover;
+               background-position: center;
+      
+               }  
+            .swiper-img-47 {
+               background:linear-gradient(to bottom, #f3a8a877, transparent),  url('./media/img/47.jpg');
+                 background-size:cover;
+               background-position: center;
+      
+               }
+            .swiper-img-48 {
+               background:linear-gradient(to bottom, #f3a8a859, transparent),  url('./media/img/48.jpg');
+                 background-size:cover;
+               background-position: center;
+      
+            }
+            .swiper-img-49 {
+               background:linear-gradient(to bottom, #f3a8a89a, transparent),  url('./media/img/49.jpg');
+                 background-size:cover;
+               background-position: center;
+      
+               }  
+            .swiper-img-50 {
+               background:linear-gradient(to bottom, #f3a8a877, transparent),  url('./media/img/50.jpg');
+                 background-size:cover;
+               background-position: center;
+      
+               }
+               .swiper-img-51 {
+                  background:linear-gradient(to bottom, #f3a8a877, transparent),  url('./media/img/51.jpg');
+                    background-size:cover;
+                  background-position: center;
+         
+                  }
+               .swiper-img-52 {
+                  background:linear-gradient(to bottom, #f3a8a859, transparent),  url('./media/img/52.jpg');
+                    background-size:cover;
+                  background-position: center;
+         
+               }
+               .swiper-img-53 {
+                  background:linear-gradient(to bottom, #f3a8a89a, transparent),  url('./media/img/53.jpg');
+                    background-size:cover;
+                  background-position: center;
+         
+                  }  
+               .swiper-img-54 {
+                  background:linear-gradient(to bottom, #f3a8a877, transparent),  url('./media/img/54.jpg');
+                    background-size:cover;
+                  background-position: center;
+         
+                  }
+               .swiper-img-55 {
+                  background:linear-gradient(to bottom, #f3a8a859, transparent),  url('./media/img/55.jpg');
+                    background-size:cover;
+                  background-position: center;
+         
+               }
+               .swiper-img-56 {
+                  background:linear-gradient(to bottom, #f3a8a89a, transparent),  url('./media/img/56.jpg');
+                    background-size:cover;
+                  background-position: center;
+         
+                  }  
+               .swiper-img-57 {
+                  background:linear-gradient(to bottom, #f3a8a877, transparent),  url('./media/img/57.jpg');
+                    background-size:cover;
+                  background-position: center;
+         
+                  }
+               .swiper-img-58 {
+                  background:linear-gradient(to bottom, #f3a8a859, transparent),  url('./media/img/58.jpg');
+                    background-size:cover;
+                  background-position: center;
+         
+               }
+               .swiper-img-59 {
+                  background:linear-gradient(to bottom, #f3a8a89a, transparent),  url('./media/img/59.jpg');
+                    background-size:cover;
+                  background-position: center;
+         
+                  }  
+               .swiper-img-60 {
+                  background:linear-gradient(to bottom, #f3a8a877, transparent),  url('./media/img/60.jpg');
+                    background-size:cover;
+                  background-position: center;
+         
+                  }
+
+                  .swiper-img-61 {
+                     background:linear-gradient(to bottom, #f3a8a877, transparent),  url('./media/img/61.jpg');
+                       background-size:cover;
+                     background-position: center;
+            
+                     }
+                  .swiper-img-62 {
+                     background:linear-gradient(to bottom, #f3a8a859, transparent),  url('./media/img/62.jpg');
+                       background-size:cover;
+                     background-position: center;
+            
+                  }
+                  .swiper-img-63 {
+                     background:linear-gradient(to bottom, #f3a8a89a, transparent),  url('./media/img/63.jpg');
+                       background-size:cover;
+                     background-position: center;
+            
+                     }  
+                  .swiper-img-64 {
+                     background:linear-gradient(to bottom, #f3a8a877, transparent),  url('./media/img/64.jpg');
+                       background-size:cover;
+                     background-position: center;
+            
+                     }
+                  .swiper-img-65 {
+                     background:linear-gradient(to bottom, #f3a8a859, transparent),  url('./media/img/65.jpg');
+                       background-size:cover;
+                     background-position: center;
+            
+                  }
+                  .swiper-img-66 {
+                     background:linear-gradient(to bottom, #f3a8a89a, transparent),  url('./media/img/66.jpg');
+                       background-size:cover;
+                     background-position: center;
+            
+                     }  
+                  .swiper-img-67 {
+                     background:linear-gradient(to bottom, #f3a8a877, transparent),  url('./media/img/67.jpg');
+                       background-size:cover;
+                     background-position: center;
+            
+                     }
+                  .swiper-img-68 {
+                     background:linear-gradient(to bottom, #f3a8a859, transparent),  url('./media/img/68.jpg');
+                       background-size:cover;
+                     background-position: center;
+            
+                  }
+                  .swiper-img-69 {
+                     background:linear-gradient(to bottom, #f3a8a89a, transparent),  url('./media/img/69.jpg');
+                       background-size:cover;
+                     background-position: center;
+            
+                     }  
+                  .swiper-img-70 {
+                     background:linear-gradient(to bottom, #f3a8a877, transparent),  url('./media/img/70.jpg');
+                       background-size:cover;
+                     background-position: center;
+            
+                     }
+
+                     .swiper-img-71 {
+                        background:linear-gradient(to bottom, #f3a8a877, transparent),  url('./media/img/71.jpg');
+                          background-size:cover;
+                        background-position: center;
+               
+                        }
+                     .swiper-img-72 {
+                        background:linear-gradient(to bottom, #f3a8a859, transparent),  url('./media/img/72.jpg');
+                          background-size:cover;
+                        background-position: center;
+               
+                     }
+                     .swiper-img-73 {
+                        background:linear-gradient(to bottom, #f3a8a89a, transparent),  url('./media/img/73.jpg');
+                          background-size:cover;
+                        background-position: center;
+               
+                        }  
+                     .swiper-img-74 {
+                        background:linear-gradient(to bottom, #f3a8a877, transparent),  url('./media/img/74.jpg');
+                          background-size:cover;
+                        background-position: center;
+               
+                        }
+                     .swiper-img-75 {
+                        background:linear-gradient(to bottom, #f3a8a859, transparent),  url('./media/img/75.jpg');
+                          background-size:cover;
+                        background-position: center;
+               
+                     }
+                     .swiper-img-76 {
+                        background:linear-gradient(to bottom, #f3a8a89a, transparent),  url('./media/img/76.jpg');
+                          background-size:cover;
+                        background-position: center;
+               
+                        }  
+                     .swiper-img-77 {
+                        background:linear-gradient(to bottom, #f3a8a877, transparent),  url('./media/img/77.jpg');
+                          background-size:cover;
+                        background-position-x:100%;
+               
+                        }
+                     .swiper-img-78 {
+                        background:linear-gradient(to bottom, #f3a8a859, transparent),  url('./media/img/78.jpg');
+                          background-size:cover;
+                        background-position: center;
+               
+                     }
+                     .swiper-img-79 {
+                        background:linear-gradient(to bottom, #f3a8a89a, transparent),  url('./media/img/79.jpg');
+                          background-size:cover;
+                        background-position: center;
+               
+                        }  
+                     .swiper-img-80 {
+                        background:linear-gradient(to bottom, #f3a8a877, transparent),  url('./media/img/80.jpg');
+                          background-size:cover;
+                        background-position: center;
+               
+                        }
+                        .swiper-img-81 {
+                           background:linear-gradient(to bottom, #f3a8a877, transparent),  url('./media/img/81.jpg');
+                             background-size:cover;
+                           background-position: center;
+                  
+                           }
+                        .swiper-img-82 {
+                           background:linear-gradient(to bottom, #f3a8a859, transparent),  url('./media/img/82.jpg');
+                             background-size:cover;
+                           background-position: center;
+                  
+                        }
+                        .swiper-img-83 {
+                           background:linear-gradient(to bottom, #f3a8a89a, transparent),  url('./media/img/83.jpg');
+                             background-size:cover;
+                           background-position: center;
+                  
+                           }  
+                        .swiper-img-84 {
+                           background:linear-gradient(to bottom, #f3a8a877, transparent),  url('./media/img/84.jpg');
+                             background-size:cover;
+                           background-position: center;
+                  
+                           }
+                        .swiper-img-85 {
+                           background:linear-gradient(to bottom, #f3a8a859, transparent),  url('./media/img/85.jpg');
+                             background-size:cover;
+                           background-position: center;
+                  
+                        }
+                        .swiper-img-86 {
+                           background:linear-gradient(to bottom, #f3a8a89a, transparent),  url('./media/img/86.jpg');
+                             background-size:cover;
+                           background-position: center;
+                  
+                           }  
+                        .swiper-img-87 {
+                           background:linear-gradient(to bottom, #f3a8a877, transparent),  url('./media/img/87.jpg');
+                             background-size:cover;
+                           background-position: center;
+                  
+                           }
+                        .swiper-img-88 {
+                           background:linear-gradient(to bottom, #f3a8a859, transparent),  url('./media/img/88.jpg');
+                             background-size:cover;
+                           background-position: center;
+                  
+                        }
+                        .swiper-img-89 {
+                           background:linear-gradient(to bottom, #f3a8a89a, transparent),  url('./media/img/89.jpg');
+                             background-size:cover;
+                           background-position: center;
+                  
+                           }  
+                        .swiper-img-90 {
+                           background:linear-gradient(to bottom, #f3a8a877, transparent),  url('./media/img/90.jpg');
+                             background-size:cover;
+                           background-position: center;
+                  
+                           }
+
+                           .swiper-img-91 {
+                              background:linear-gradient(to bottom, #f3a8a877, transparent),  url('./media/img/91.jpg');
+                                background-size:cover;
+                              background-position: center;
+                     
+                              }
+                           .swiper-img-92 {
+                              background:linear-gradient(to bottom, #f3a8a859, transparent),  url('./media/img/92.jpg');
+                                background-size:cover;
+                              background-position: center;
+                     
+                           }
+                           .swiper-img-93 {
+                              background:linear-gradient(to bottom, #f3a8a89a, transparent),  url('./media/img/93.jpg');
+                                background-size:cover;
+                              background-position: center;
+                     
+                              }  
+                           .swiper-img-94 {
+                              background:linear-gradient(to bottom, #f3a8a877, transparent),  url('./media/img/94.jpg');
+                                background-size:cover;
+                              background-position: center;
+                     
+                              }
+                           .swiper-img-95 {
+                              background:linear-gradient(to bottom, #f3a8a859, transparent),  url('./media/img/95.jpg');
+                                background-size:cover;
+                              background-position: center;
+                     
+                           }
+                           .swiper-img-96 {
+                              background:linear-gradient(to bottom, #f3a8a89a, transparent),  url('./media/img/96.jpg');
+                                background-size:cover;
+                              background-position: center;
+                     
+                              }  
+                           .swiper-img-97 {
+                              background:linear-gradient(to bottom, #f3a8a877, transparent),  url('./media/img/97.jpg');
+                                background-size:cover;
+                              background-position: center;
+                     
+                              }
+                           .swiper-img-98 {
+                              background:linear-gradient(to bottom, #f3a8a859, transparent),  url('./media/img/98.jpg');
+                                background-size:cover;
+                              background-position: center;
+                     
+                           }
+                           .swiper-img-99 {
+                              background:linear-gradient(to bottom, #f3a8a89a, transparent),  url('./media/img/99.jpg');
+                                background-size:cover;
+                              background-position: center;
+                     
+                              }  
+                           .swiper-img-100 {
+                              background:linear-gradient(to bottom, #f3a8a877, transparent),  url('./media/img/100.jpg');
+                                background-size:cover;
+                              background-position: center;
+                     
+                              }
+    
    
 
 
    
-.swiper-button-next::after, .swiper-button-prev::after {
+.swiper-button-next::after, .swiper-button-prev::after, .swiper-button-nexttwo::after, .swiper-button-prevtwo::after  {
    content: "";
    }
    
-   .swiper-button-prev {
+   .swiper-button-prev, .swiper-button-prevtwo {
    background-image: url('./media/icon/circle-chevron-left.svg');
    background-repeat:no-repeat;
    background-position:right;
@@ -200,7 +810,7 @@ nav {
    z-index:30;
    }
    
-   .swiper-button-next {
+   .swiper-button-next,   .swiper-button-nexttwo {
    background-image: url('./media/icon/circle-chevron-right.svg');
    background-repeat:no-repeat;
    padding-right:10%;
@@ -210,18 +820,18 @@ nav {
    
    }
    
-   .swiper-button-prev:hover {
+   .swiper-button-prev:hover, .swiper-button-prevtwo:hover {
        background-image: url('./media/icon/circle-chevron-left-hover.svg');
    
        }
        
-   .swiper-button-next:hover {
+   .swiper-button-next:hover,  .swiper-button-nexttwo:hover {
    background-image: url('./media/icon/circle-chevron-right-hover.svg');
    
    }
    
    
-   .swiper-pagination-bullet {
+   .swiper-pagination-bullet,   .swiper-pagination-bullettwo {
    background: rgba(255,255,255, 0.3);
    width: 0.8rem;
    height: 0.8rem;
@@ -229,15 +839,19 @@ nav {
    opacity: 1;
    }
    
-   .swiper-pagination-bullet-active {
+   .swiper-pagination-bullet-active, .swiper-pagination-bullet-activetwo {
    background: rgba(255,255,255, 0.7);
    width: 0.8rem;
    height: 0.8rem;
    border-radius: .5rem;
    }
 
-   .swiper-slide-visible{
+   .swiper-slide-visible,  .swiper-slide-visibletwo {
       z-index:10 !important;
+    }
+
+    .swiper-img {
+      height:300px;
     }
 
     /* zoom-in metodo animation */
