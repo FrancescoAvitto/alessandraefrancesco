@@ -1025,10 +1025,15 @@ nav {
 
  .juicer-about {
    display:none!important;
+   position:absolute !important;
+   bottom:1000px !important;
+   opacity:0;
  }
 
  h1.referral {
    display:none !important;
+   position:absolute;
+   bottom:1000px;
  }
 
 
