@@ -1092,6 +1092,9 @@ nav {
    .swiper-img-14 {
       background-position: center 0%;
    }
+   .swiper-img-19 {
+      background-position: 100% center;
+   }
    .swiper-img-3 {
       background-position: center 100%;
    }
@@ -1102,14 +1105,27 @@ nav {
       background-position: 0% center;
    }
 
-   .swiper-img-30 {
-      background-position: center 0%;
+   .swiper-img-32 {
+      background-position: 0% center;
    }
 
    .swiper-img-46 {
+      background-position: center 100%;
+   }
+   .swiper-img-48 {
+      background-position: center 100%;
+   }
+
+   .swiper-img-49 {
       background-position: center 0%;
    }
 
+   .swiper-img-93 {
+      background-position: center 100%;
+   }
+   .swiper-img-95 {
+      background-position: center 100%;
+   }
 
 }
 
