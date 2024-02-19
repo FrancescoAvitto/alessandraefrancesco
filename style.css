@@ -1076,8 +1076,40 @@ nav {
    .bg-invitation-box {
       background-position:77%;
       min-height:auto;
-
-
    }
+
+   .swiper-img-3 {
+      background-position: center 100%;
+   }
+   .swiper-img-4 {
+      background-position: center 100%;
+   }
+
+   .swiper-img-7 {
+      background-position: center 90%;
+   }
+
+   .swiper-img-14 {
+      background-position: center 0%;
+   }
+   .swiper-img-3 {
+      background-position: center 100%;
+   }
+   .swiper-img-24 {
+      background-position: center 20%;
+   }
+   .swiper-img-29 {
+      background-position: 0% center;
+   }
+
+   .swiper-img-30 {
+      background-position: center 0%;
+   }
+
+   .swiper-img-46 {
+      background-position: center 0%;
+   }
+
+
 }
 
