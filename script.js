@@ -18,8 +18,8 @@ document.addEventListener("scroll", function () {
 
 function timeout() {
   // timer
-  const final = new Date(2024, 8, 14);
-  // const message = document.querySelector("#message");
+  const final = new Date(2024, 8, 14, 18, 30);
+  const containerCountdown = document.querySelector("#containerCountdown");
   const giorniMancanti = document.querySelector("#giorniMancanti");
   const oreMancanti = document.querySelector("#oreMancanti");
   const minutiMancanti = document.querySelector("#minutiMancanti");
@@ -37,11 +37,7 @@ function timeout() {
       minutiMancanti.innerHTML = minuti < 10 ? "0" + minuti : minuti;
       secondiMancanti.innerHTML = secondi < 10 ? "0" + secondi : secondi;
     } else {
-      message.innerHTML = "Tempo scaduto!";
-      // giorniMancanti.innerHTML = "00";
-      // oreMancanti.innerHTML = "00";
-      // minutiMancanti.innerHTML = "00";
-      // secondiMancanti.innerHTML = "00";
+      containerCountdown.classList.add("hidden");
     }
   }
   setInterval(timer, 1000);
