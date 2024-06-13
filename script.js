@@ -18,7 +18,7 @@ document.addEventListener("scroll", function () {
 
 function timeout() {
   // timer
-  const final = new Date(2024, 8, 14, 18, 30);
+  const final = new Date(2024, 8, 14, 17, 30);
   const containerCountdown = document.querySelector("#containerCountdown");
   const giorniMancanti = document.querySelector("#giorniMancanti");
   const oreMancanti = document.querySelector("#oreMancanti");
