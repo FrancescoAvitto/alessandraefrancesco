@@ -739,7 +739,7 @@
       <script>
         function copyToClipboard() {
             let ibanText = document.getElementById('iban').innerText;
-            navigator.clipboard.writeText(ibanText).then(() => {
+            navigator.clipboard.writeText(ibanText.toUpperCase()).then(() => {
               let message = document.getElementById('copy-message');
                 message.style.opacity = '1';
              
