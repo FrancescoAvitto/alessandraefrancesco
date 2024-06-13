@@ -507,12 +507,15 @@
             data-aos-once="true"
           >
           IBAN <b id="iban">IT17L0760104000001021250517</b></p>
-          <div class="hover:scale-[1.20] transition duration-200 ">
+          <div class="overflow-hidden py-3 px-0 sm:py-0 sm:px-3">
+            <div class="hover:scale-[1.20] transition duration-200 max-w-[100vw] ">
+  
+              <img data-aos="fade-right"
+              data-aos-duration="2400"
+              data-aos-easing="ease-in-out"
+              data-aos-once="true" class="inline h-6 cursor-pointer transition duration-300 text-black mt-0 sm:mt-3" onclick="copyToClipboard()" data-copiable-text="IT17L0760104000001021250517" src="./media/icon/copy.svg" alt="">
+            </div>
 
-            <img data-aos="fade-right"
-            data-aos-duration="2400"
-            data-aos-easing="ease-in-out"
-            data-aos-once="true" class="inline h-6 cursor-pointer ml-2 transition duration-300 text-black mt-0 sm:mt-3" onclick="copyToClipboard()" data-copiable-text="IT17L0760104000001021250517" src="./media/icon/copy.svg" alt="">
           </div>
 </div>
      
@@ -524,7 +527,10 @@
         data-aos-once="true"
       >
        intestato ad <br class="block sm:hidden"> <b> Avitto Francesco</b></p>
-       <p class="hidden fs-nunito-sans italic" id="copy-message">IBAN copiato con successo!</p>
+       <div class="overflow-hidden ">
+         <p class="opacity-0 fs-nunito-sans italic" id="copy-message">IBAN copiato con successo!</p>
+
+       </div>
    
       </div>
     </div>
@@ -735,10 +741,10 @@
             let ibanText = document.getElementById('iban').innerText;
             navigator.clipboard.writeText(ibanText).then(() => {
               let message = document.getElementById('copy-message');
-                message.style.display = 'block';
+                message.style.opacity = '1';
              
                 setTimeout(() => {
-                    message.style.display = 'none';
+                    message.style.opacity = '0';
                 }, 5000);            }).catch(err => {
                 console.error('Errore nella copia del testo: ', err);
             });
